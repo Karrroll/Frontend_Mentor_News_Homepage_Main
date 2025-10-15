@@ -23,6 +23,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   padding: 0 4vw;
+  margin-bottom: 4rem;
   min-height: 100vh;
   min-width: 325px;
   width: 100%;
