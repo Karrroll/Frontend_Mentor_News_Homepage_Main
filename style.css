@@ -143,3 +143,16 @@ p.article-text {
   line-height: 1.5;
   margin: auto 0;
 }
+
+/* Fixed layout width (550px) for screens ≥600px; only margins expand */
+@media (min-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .main-container, header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+  }
+}
