@@ -164,4 +164,17 @@ p.article-text {
     display: none;
   }
 
+  nav.menu {
+    display: flex;
+    gap: clamp(1rem, 3vw, 4rem);
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #C5C6CE;
+  }
+
+  .menu a:hover {
+    color: #F15E50;
+  }
 }
