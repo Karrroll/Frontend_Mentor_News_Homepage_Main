@@ -144,8 +144,8 @@ p.article-text {
   margin: auto 0;
 }
 
-/* Fixed layout width (550px) for screens ≥600px; only margins expand */
-@media (min-width: 600px) {
+/* Fixed layout width (550px) for screens 600px-1023px; only margins expand */
+@media (min-width: 600px) and (max-width: 1023px) {
   body {
     padding: 0;
   }
@@ -155,4 +155,13 @@ p.article-text {
     margin-right: auto;
     width: 550px;
   }
+}
+
+/* Styles for desktop screens (≥1024px) */
+@media (min-width: 1024px) {
+  header .menu-icon,
+  header .sidebar-close-icon {
+    display: none;
+  }
+
 }
