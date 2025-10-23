@@ -48,6 +48,10 @@ div.menu-icon:hover {
   opacity: 0.5;
 }
 
+.hero-image img {
+  width: 100%;
+}
+
 .main-container .hero,
 .hero-content {
   display: flex;
