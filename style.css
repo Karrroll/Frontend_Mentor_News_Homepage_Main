@@ -181,4 +181,33 @@ p.article-text {
   .menu a:hover {
     color: #F15E50;
   }
-}
+
+  body p {
+    font-size: 16px;
+  }
+
+  body {
+    margin-bottom: 0;
+    padding: 5vh 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header,
+  .main-container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-container {
+   display: grid;
+   grid-template-areas:
+                        "main  main  aside"
+                        "cards cards cards";
+  grid-template-columns: 1fr 1fr minmax(350px, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 2rem;
+  }
