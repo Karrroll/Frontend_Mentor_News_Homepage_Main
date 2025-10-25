@@ -220,6 +220,10 @@ p.article-text {
     row-gap: 1.5rem;
   }
 
+  h1.hero-title {
+    font-size: clamp(2.75rem, 3.5vw, 3.5rem);
+  }
+
   .hero-image {
     grid-column: span 2;
   }
@@ -229,7 +233,26 @@ p.article-text {
     align-items: center;
   }
 
+  .news * {
+    width: 325px;
+    margin: auto auto;
+  }
+
+  h2.news-header {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 2rem;
+  }
+
   .main-container .best-articles {
     grid-area: cards;
     flex-flow: row nowrap;
   }
+
+  .hero-content {
+    justify-content: space-between;
+  }
+
+  button.hero-button {
+    min-width: 150px;
+  }
+}
