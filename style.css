@@ -211,3 +211,25 @@ p.article-text {
   grid-template-rows: auto auto;
   column-gap: 2rem;
   }
+
+  .main-container .hero {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1.5rem;
+  }
+
+  .hero-image {
+    grid-column: span 2;
+  }
+
+  .main-container .news {
+    grid-area: aside;
+    align-items: center;
+  }
+
+  .main-container .best-articles {
+    grid-area: cards;
+    flex-flow: row nowrap;
+  }
