@@ -26,17 +26,20 @@
   
     <nav class="menu">
       <img class="sidebar-close-icon" src="./assets/images/icon-menu-close.svg" alt="Menu close icon">
-      <a href="">Home</a>
-      <a href="">New</a>
-      <a href="">Popular</a>
-      <a href="">Trending</a>
-      <a href="">Categories</a>
+      <a href="#">Home</a>
+      <a href="#">New</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+      <a href="#">Categories</a>
     </nav>
   </header>
 
   <main class="main-container">
     <section class="hero">
-      <img class="hero-image" src="./assets/images/image-web-3-mobile.jpg" alt="Abstract illustration representing Web 3.0">
+      <picture class="hero-image">
+        <source media="(min-width: 1024px)" srcset="./assets/images/image-web-3-desktop.jpg">   <!-- desktop img -->
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="Abstract illustration representing Web 3.0">    <!-- mobile img -->
+      </picture>
       <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
 
       <div class="hero-content">
