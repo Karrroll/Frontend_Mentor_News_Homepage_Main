@@ -48,6 +48,17 @@ div.menu-icon:hover {
   opacity: 0.5;
 }
 
+/* mobile side menu */
+.side-menu {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(75%, 300px);
+}
+/* -----------------*/
+
 .hero-image img {
   width: 100%;
 }
