@@ -159,6 +159,28 @@ p.article-text {
   margin: auto 0;
 }
 
+/* Display desktop-style nav for ≥600px screens */
+@media (min-width: 600px) {
+  header .menu-icon,
+  header .sidebar-close-icon {
+    display: none;
+  }
+
+  nav.menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #C5C6CE;
+  }
+
+  .menu a:hover {
+    color: #F15E50;
+  }
+}
+
 /* Fixed layout width (550px) for screens 600px-1023px; only margins expand */
 @media (min-width: 600px) and (max-width: 1023px) {
   body {
@@ -174,23 +196,8 @@ p.article-text {
 
 /* Styles for desktop screens (≥1024px) */
 @media (min-width: 1024px) {
-  header .menu-icon,
-  header .sidebar-close-icon {
-    display: none;
-  }
-
   nav.menu {
-    display: flex;
-    gap: clamp(1rem, 3vw, 4rem);
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: #C5C6CE;
-  }
-
-  .menu a:hover {
-    color: #F15E50;
+    gap: 3vw;
   }
 
   body p {
