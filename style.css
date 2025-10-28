@@ -49,13 +49,24 @@ div.menu-icon:hover {
 }
 
 /* mobile side menu */
-.side-menu {
+.menu.side-menu {
   position: fixed;
-  background-color: white;
   top: 0;
   right: 0;
   height: 100vh;
   width: min(75%, 300px);
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sidebar-close-icon {
+  align-self: flex-end;
+  margin-bottom: min(5rem, 10vh);
 }
 /* -----------------*/
 
