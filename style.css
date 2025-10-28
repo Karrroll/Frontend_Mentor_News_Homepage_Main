@@ -56,7 +56,7 @@ div.menu-icon:hover {
   height: 100vh;
   width: min(75%, 300px);
   background-color: white;
-  
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -67,6 +67,21 @@ div.menu-icon:hover {
 .sidebar-close-icon {
   align-self: flex-end;
   margin-bottom: min(5rem, 10vh);
+  cursor: pointer;
+}
+
+.sidebar-close-icon:hover {
+  opacity: 0.5;
+}
+
+.menu a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #C5C6CE;
+}
+
+.menu a:hover {
+  color: #F15E50;
 }
 /* -----------------*/
 
@@ -100,7 +115,12 @@ button.hero-button {
   width: 50%;
   padding: 1rem;
   letter-spacing: 3px;
-  
+  cursor: pointer;
+}
+
+button.hero-button:hover {
+  color: white;
+  background-color: black;
 }
 
 .main-container .news {
@@ -162,6 +182,11 @@ strong.article-item {
 
 h4.article-title {
   font-weight: 800;
+  cursor: pointer;
+}
+
+h4.article-title:hover {
+  color: #F15E50;
 }
 
 p.article-text {
