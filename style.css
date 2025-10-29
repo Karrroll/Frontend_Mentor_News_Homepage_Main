@@ -40,11 +40,11 @@ body {
   width: auto;
 }
 
-.menu-icon img {
+.side-menu-open-icon img {
   cursor: pointer;
 }
 
-div.menu-icon:hover {
+div.side-menu-open-icon:hover {
   opacity: 0.5;
 }
 
@@ -69,13 +69,13 @@ div.menu-icon:hover {
   }
 }
 
-.sidebar-close-icon {
+.side-menu-close-icon {
   align-self: flex-end;
   margin-bottom: min(5rem, 10vh);
   cursor: pointer;
 }
 
-.sidebar-close-icon:hover {
+.side-menu-close-icon:hover {
   opacity: 0.5;
 }
 
@@ -202,8 +202,8 @@ p.article-text {
 
 /* Display desktop-style nav for ≥600px screens */
 @media (min-width: 600px) {
-  header .menu-icon,
-  header .sidebar-close-icon {
+  header .side-menu-open-icon,
+  header .side-menu-close-icon {
     display: none;
   }
 
