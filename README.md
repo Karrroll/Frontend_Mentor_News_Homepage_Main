@@ -23,11 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop design](./screenshots/desktop.png)
+  #### Desktop design
+  ![Desktop design](./screenshots/desktop.png)
 
-![Mobile design](./screenshots/mobile.png)
+  #### Mobile design
+  ![Mobile design](./screenshots/mobile.png)
 
-![Side menu](./screenshots/side_menu.png)
+  #### Side menu
+  ![Side menu](./screenshots/side_menu.png)
 
 ### Links
 
