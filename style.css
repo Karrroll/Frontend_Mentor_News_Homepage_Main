@@ -28,10 +28,19 @@
     padding: 1.5rem 0;
   }
 
-  nav.menu {
-    display: none;
+  header button {
+    border: none;
+    background: none;
   }
 
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    list-style: none;
+  }
+  
   .main-container {
     display: flex;
     flex-flow: column nowrap;
@@ -172,10 +181,7 @@
     nav.menu.open {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-    }
 
-    .side-menu {
       position: fixed;
       top: 0;
       right: 0;
@@ -184,7 +190,6 @@
       background-color: white;
 
       padding: 2rem;
-      gap: 2rem;
     }
 
     .menu a {
@@ -192,8 +197,8 @@
     }
   }
 
-  .side-menu-open-icon,
-  .side-menu-close-icon {
+  .side-menu-close-icon,
+  .side-menu-open-icon {
     cursor: pointer;
   }
 
@@ -204,7 +209,8 @@
 
   .side-menu-close-icon {
     align-self: flex-end;
-    margin-bottom: min(5rem, 10vh);
+    margin-bottom: min(7rem, 10vh);
+    cursor: pointer;
   }
 
 }
@@ -219,6 +225,10 @@
 
   nav.menu {
     display: flex;
+  }
+
+  .menu ul {
+    flex-direction: row;
     gap: 1rem;
   }
 }

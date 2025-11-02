@@ -17,20 +17,35 @@
 
   <header class="header">
     <div class="logo-icon">
-      <img src="./assets/images/logo.svg" alt="Homepage logo">
+      <a href="/" aria-label="Go to homepage">
+        <img src="./assets/images/logo.svg" alt="Homepage logo">
+      </a>
     </div>
   
-    <div class="side-menu-open-icon">
-      <img src="./assets/images/icon-menu.svg" alt="Menu icon">
-    </div>
+    <button 
+      class="side-menu-open-icon"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls="main-navigation"
+      aria-expanded="false">
+      <img src="./assets/images/icon-menu.svg" alt="">
+    </button>
   
-    <nav class="menu">
-      <img class="side-menu-close-icon" src="./assets/images/icon-menu-close.svg" alt="Menu close icon">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
+    <nav id="main-navigation" class="menu" aria-label="Main navigation" hidden>
+      <button
+        class="side-menu-close-icon"
+        type="button"
+        aria-label="Close navigation menu">
+        <img src="./assets/images/icon-menu-close.svg" alt="">
+      </button>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
     </nav>
   </header>
 
