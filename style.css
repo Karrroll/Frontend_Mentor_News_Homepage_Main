@@ -148,6 +148,18 @@
     gap: 2rem;
   }
 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   .best-articles article {
     display: flex;
     align-items: flex-start;
@@ -167,18 +179,18 @@
     height: 125px;
   }
 
-  strong.article-item {
+  span.article-item {
     color: #F15E50;
     font-size: 1.75rem;
     font-weight: 700;
   }
 
-  h4.article-title {
+  h3.article-title {
     font-weight: 800;
     cursor: pointer;
   }
 
-  h4.article-title:hover {
+  h3.article-title:hover {
     color: #F15E50;
   }
 
@@ -248,7 +260,7 @@
 
 /* -------------------------------------------------------------------------------------------------------- */
 /* Fixed layout width (550px) for screens 600px-1023px; only margins expand */
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 600px) {
   body {
     padding: 0;
   }
@@ -315,7 +327,7 @@
   }
   
   h1.hero-title {
-    font-size: clamp(2.75rem, 3.5vw, 3.5rem);
+    font-size: clamp(3rem, 3.5vw, 3.5rem);
   }
 
   .hero-content {
