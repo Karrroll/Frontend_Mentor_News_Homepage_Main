@@ -85,18 +85,22 @@
     line-height: 1.75;
   }
 
-  button.hero-button {
+  a.hero-button {
+    text-decoration: none;
+    color: black;
+    text-align: center;
     border: none;
     background-color: #F15E50;
     text-transform: uppercase;
     font-weight: 800;
+    min-width: 170px;
     width: 50%;
     padding: 1rem;
     letter-spacing: 3px;
     cursor: pointer;
   }
 
-  button.hero-button:hover {
+  a.hero-button:hover {
     color: white;
     background-color: black;
   }
@@ -306,12 +310,16 @@
   }
 
   /* hero section styles */
+  .hero-image {
+    grid-column: span 2;
+  }
+  
   h1.hero-title {
     font-size: clamp(2.75rem, 3.5vw, 3.5rem);
   }
 
-  .hero-image {
-    grid-column: span 2;
+  .hero-content {
+    justify-content: space-between;
   }
 
   /* news section styles */
@@ -344,11 +352,4 @@
     max-width: 400px;
   }
 
-  .hero-content {
-    justify-content: space-between;
-  }
-
-  button.hero-button {
-    min-width: 150px;
-  }
 }
