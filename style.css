@@ -1,13 +1,46 @@
+/* global properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* screen reader class*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* custom properties */
+:root {
+  --bg-color-primary: #FFFEFC;
+  --bg-color-dark: #00000D;
+  --bg-color-button: #F15E50;
+  --bg-color-button-hover: #000000;
+
+  --color-text-primary: #66677A;
+  --color-text-secondary: #C9C9CE;
+  --color-text-news-title: #FFFFFF;
+  --color-article-accent: #F15E50;
+  --color-text-hover: #E9AB53;
+  --color-text-button: #000000;
+  --color-text-button-hover: #FFFFFF;
+
+  --color-divider: #66677A;
+}
+/* --------------------------------------------------------------------- */
 /* Styles for mobile screens (≥325px) */
 @media (min-width: 325px) {
   /* main layout for mobile */
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
   body {
+    background-color: var(--bg-color-primary);
     font-family: "Inter", sans-serif;
     font-weight: 400;
     padding: 0 4vw;
@@ -40,7 +73,7 @@
 
     list-style: none;
   }
-  
+
   .main-container {
     display: flex;
     flex-flow: column nowrap;
@@ -53,13 +86,13 @@
     width: auto;
   }
 
-  .menu a {
+  .nav-list a {
     text-decoration: none;
-    color: #C5C6CE;
+    color: var(--color-text-primary);
   }
 
-  .menu a:hover {
-    color: #F15E50;
+  .nav-list a:hover {
+    color: var(--color-text-hover);
   }
 
   /* hero section styles */
@@ -81,16 +114,16 @@
   }
 
   p.hero-text {
-    color: #C5C6CE;
+    color: var(--color-text-primary);
     line-height: 1.75;
   }
 
   a.hero-button {
     text-decoration: none;
-    color: black;
+    color: var(--color-text-button);
     text-align: center;
     border: none;
-    background-color: #F15E50;
+    background-color: var(--bg-color-button);
     text-transform: uppercase;
     font-weight: 800;
     min-width: 170px;
@@ -101,8 +134,8 @@
   }
 
   a.hero-button:hover {
-    color: white;
-    background-color: black;
+    color: var(--color-text-button-hover);
+    background-color: var(--bg-color-button-hover);
   }
 
   /* news section styles */
@@ -110,34 +143,33 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 1.5rem 1.25rem;
-    color: #FFFFFF;
-    background-color: #000000;
+    background-color: var(--bg-color-dark);
   }
 
   .news h2 {
-    color: #E9AB53;
+    color: var(--color-text-hover); /*??????*/
     margin-bottom: 2rem;
   }
 
   .news p {
-    color: #C5C6CE;
+    color: var(--color-text-secondary);
     line-height: 1.5;
     margin-top: 0.5rem;
   }
 
-  .news-item a {
+  .news-title-link {
     text-decoration: none;
-    color: white;
+    color: var(--color-text-news-title);
   }
 
   .news-item a:hover {
-    color: #E9AB53;
+    color: var(--color-text-hover);
   }
 
   hr.article-divider {
     border: none;
     margin: 2rem 0;
-    background-color: #C5C6CE;
+    background-color: var(--color-divider);
     height: 0.25px;
   }
 
@@ -146,18 +178,6 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 2rem;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
   }
 
   .best-articles article {
@@ -180,7 +200,7 @@
   }
 
   span.article-item {
-    color: #F15E50;
+    color: var(--color-article-accent);
     font-size: 1.75rem;
     font-weight: 700;
   }
@@ -191,11 +211,11 @@
   }
 
   h3.article-title:hover {
-    color: #F15E50;
+    color: var(--color-article-accent);
   }
 
   p.article-text {
-    color: #C5C6CE;
+    color: var(--color-text-primary);
     line-height: 1.5;
     margin: auto 0;
   }
@@ -212,7 +232,7 @@
       right: 0;
       height: 100vh;
       width: min(75%, 300px);
-      background-color: white;
+      background-color: var(--bg-color-primary);
 
       padding: 2rem;
     }
@@ -237,9 +257,7 @@
     margin-bottom: min(7rem, 10vh);
     cursor: pointer;
   }
-
 }
-
 /* -------------------------------------------------------------------------------------------------------- */
 /* Display desktop-style nav for ≥600px screens */
 @media (min-width: 600px) {
