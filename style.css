@@ -135,9 +135,13 @@
     cursor: pointer;
   }
 
-  a.hero-button:hover {
+  a.hero-link:hover {
     color: var(--color-text-button-hover);
     background-color: var(--bg-color-button-hover);
+  }
+
+  a.hero-link:active {
+    transform: translateY(2px);
   }
 
   /* news section styles */
