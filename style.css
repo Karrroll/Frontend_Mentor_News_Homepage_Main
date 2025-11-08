@@ -118,7 +118,7 @@
     line-height: 1.75;
   }
 
-  a.hero-button {
+  a.hero-link {
     text-decoration: none;
     color: var(--color-text-button);
     text-align: center;
@@ -205,12 +205,14 @@
     font-weight: 700;
   }
 
-  h3.article-title {
+  .article-link {
+    text-decoration: none;
+    color: unset;
     font-weight: 800;
     cursor: pointer;
   }
 
-  h3.article-title:hover {
+  .article-link:hover {
     color: var(--color-article-accent);
   }
 
