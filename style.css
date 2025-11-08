@@ -20,6 +20,8 @@
 
 /* custom properties */
 :root {
+  --font-family-primary: "Inter", sans-serif;
+
   --bg-color-primary: #FFFEFC;
   --bg-color-dark: #00000D;
   --bg-color-button: #F15E50;
@@ -41,7 +43,7 @@
   /* main layout for mobile */
   body {
     background-color: var(--bg-color-primary);
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-family-primary);
     font-weight: 400;
     padding: 0 4vw;
     margin-bottom: 1.5rem;
